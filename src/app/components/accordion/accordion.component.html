@@ -1,0 +1,31 @@
+<p>
+  accordion works!
+</p>
+
+<div style="width: 90%; margin: 0 auto;">
+  <button mat-button color="primary" (click)="openAll()">open all</button>
+  <button mat-button color="warn" (click)="closeAll()">Close all</button>
+  <mat-accordion #myaccordion="matAccordion"  multi="true">
+
+    <mat-expansion-panel 
+   >
+      <mat-expansion-panel-header>
+        This is the expansion 1 title
+      </mat-expansion-panel-header>
+  
+      This the expansion 1 content
+  
+    </mat-expansion-panel>
+  
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        This is the expansion 2 title
+      </mat-expansion-panel-header>
+  
+      This the expansion 2 content
+  
+    </mat-expansion-panel>
+  
+  </mat-accordion>
+
+</div>
